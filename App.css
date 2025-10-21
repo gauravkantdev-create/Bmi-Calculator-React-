@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  background-image: url('D:\react_project\bmi calculator\bmicalculator\public\AoU_Hulk_01.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: 75vh;
+  filter: drop-shadow(0 20px 20px red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 90vw;
+  max-width: 400px;
+  padding: 20px;
+  border: none;
+  filter: drop-shadow(0px 0px 20px blue);
+  margin: 20px auto;
+}
+
+h1 {
+  color: black;
+  filter: drop-shadow(0px 0px 20px blue);
+  margin-bottom: 20px;
+}
+
+.slider-output {
+  color: black;
+  margin-top: 20px;
+}
+
+.input-slider {
+  margin-top: 20px;
+  filter: drop-shadow(0px 0px 20px blue);
+  width: 100%;
+}
+
+.output {
+  border: 2px solid gray;
+  border-radius: 20px;
+  color: green;
+  background-color: yellow;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.bmi {
+  border: 2px solid gray;
+  background-color: red;
+  padding: 10px;
+  margin-top: 20px;
+}
+.input-slider,
+range{
+  width: 300px;
+  height: 5px;
+}
+
+
+
+.input-slider,
+range:hover {
+  border: 2px solid green;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-slider:hover,
+range:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 255, 0, 0.7);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+      background-size: contain;
+  }
+  
+  main {
+      width: 95vw;
+      margin: 20px;
+  }
+  
+  h1 {
+      font-size: 1.5rem;
+  }
+  
+  .slider-output {
+      font-size: 1rem;
+  }
+  
+  .output, .bmi {
+      font-size: 1rem;
+      padding: 5px;
+  }
+}
